@@ -7,10 +7,10 @@ fi
 
 VM_ID="$1"
 
-echo "Disabling GUI :  VM ( $VM_ID )"
-qm set $VM_ID --vga serial0 
+echo "Enabling serial0 :  VM ( $VM_ID )"
+qm set $VM_ID -serial0 socket
 sleep 1
-echo "Disabling GUI requires a reboot ..."
+echo "Enabling serial0 requires a reboot ..."
 qm shutdown $VM_ID
 sleep 15
 echo "starting VM( $VM_ID )"
