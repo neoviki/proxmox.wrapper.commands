@@ -94,3 +94,8 @@ $ ./serial.enable <vm_id>
 - Proxmox server setup and running.
 - Appropriate permissions to interact with Proxmox services.
 - The necessary VM IDs or paths for the operations to function.
+
+
+## Reference
+
+[1] https://www.proxmox.com/en/
